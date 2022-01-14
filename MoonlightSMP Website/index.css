@@ -1,0 +1,99 @@
+body {
+    background-color: #fff;
+}
+
+nav {
+    background-color: #414141;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    text-decoration: none;
+}
+
+#CopyAddressDiv {
+    position: absolute;
+    margin-top: 25px;
+    background-color: #414141;
+    width: 400px;
+    border-radius: 16px;
+    margin-left: 40%;
+}
+
+#AddressTextDiv {
+    position: absolute;
+    background-color: gray;
+    border-radius: 16px;
+    bottom: 5pt;
+    left: 5pt;
+    width: 85%;
+    height: 42px;
+}
+
+#Address-Text {
+    position: absolute;
+    
+    bottom: -3pt;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -10px;
+    left: 15%;
+}
+
+#copyAddressButton {
+    position: relative;
+    margin-left:360px;
+    width: 56px;
+    height: 56px;
+    border-style: none;
+    background-color: #323232;
+    border-radius: 50%;
+}
+
+#address-popup-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+}
+
+#addressCopyPopupButton {
+    border-style: hidden;
+    margin-bottom: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+#address-popup {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    background-color: #323232;
+    margin: 0 auto;
+    margin-left: 45%;
+    width: 175px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 3px 3px #232323;
+    z-index: 99;
+}
+
+#header-text {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.fa-copy {
+    color: rgb(240, 240, 240);
+    font-size: 40px;
+}
+
+.fa-check-circle {
+    color: rgb(60, 219, 60);
+    font-size: 48px;
+    margin-top: 10px;
+}

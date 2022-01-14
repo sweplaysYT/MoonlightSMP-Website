@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <title>Moonlight SMP | Home</title>
+</head>
+
+<body>
+    <div id="address-popup">
+        <div class="address-popup-content">        
+            <i class="far fa-check-circle"></i>
+            <p id="address-popup-text">Server address <br/>successfully copied</p>
+            <button id="addressCopyPopupButton" onclick="ClosePopup()">Ok</button>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div id="CopyAddressDiv">
+        <button id="copyAddressButton" onclick="serverAddressCopy()"><i class="fas fa-copy"></i></button>
+        <div id="AddressTextDiv">
+            <p id="Address-Text">MoonLightsS1.aternos.me</p>
+        </div>
+    </div>
+
+    <div>
+        <h1 id="header-text">Moonlight SMP</h1>
+    </div>
+</body>
+
+</html>

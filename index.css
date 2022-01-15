@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #272727;
 }
 
 nav {
@@ -96,4 +96,14 @@ nav ul li {
     color: rgb(60, 219, 60);
     font-size: 48px;
     margin-top: 10px;
+}
+
+.snowflake {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+    z-index: 1000;
 }

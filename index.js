@@ -1,7 +1,7 @@
 var opacity = 0;
+let begonetimer = 5 * 1000;
 
 function serverAddressCopy() {
-    document.getElementById('copyAddressButton')
     var address = "MoonLightsS1.aternos.me"
     var dummy = document.createElement("textarea");
     var increment = 0.05
@@ -11,8 +11,8 @@ function serverAddressCopy() {
     document.execCommand("copy");
     document.body.removeChild(dummy);
 
-    var popup = document.getElementById('address-popup');
-    popup.style.display = "block";
+    var popup = document.getElementById('copy-address-alert');
+    popup.style.display = "flex";
     var instance = window.setInterval(function() {
         popup.style.opacity = opacity;
         opacity = opacity + increment;
@@ -25,20 +25,22 @@ function serverAddressCopy() {
 document.querySelector("#copyAddressButton").addEventListener("click", serverAddressCopy);
 
 function ClosePopup() {
-    var popup = document.getElementById('address-popup');
+    var popup = document.getElementById('copy-address-alert');
     var decrement = 0.05
     var instance = window.setInterval(function() {
         popup.style.opacity = opacity;
         opacity = opacity - decrement;
         if (opacity < 0) {
+            begonetimer = 5 * 1000;
             window.clearInterval(instance);
             popup.style.display = "none";
         }
     },15);
-
 }
 
 document.querySelector("#addressCopyPopupButton").addEventListener("click", ClosePopup);
+
+// ? NAVBAR LINE
 
 function homeLinkHover() {
     const homeBar = document.getElementById('navbar-home-bar');
@@ -88,5 +90,25 @@ function rulesLinkStopHover() {
     setTimeout(function() {
         rulesBar.style.width = "0px"
         rulesBar.style.transition = "width 0.3s";
+    }, 1)
+}
+
+// ? SERVER ADDRESS
+
+function addressHover() {
+    const address = document.getElementById('address-bar');
+    setTimeout(function() {
+        address.style.backgroundColor = "rgb(0, 195, 255)"
+        address.style.width = "275px";
+        address.style.transition = "width 0.3s";
+    }, 1)
+}
+
+function addressLeave() {
+    const address = document.getElementById('address-bar');
+    setTimeout(function() {
+        address.style.backgroundColor = "rgb(0, 195, 255)"
+        address.style.width = "0px";
+        address.style.transition = "width 0.3s";
     }, 1)
 }

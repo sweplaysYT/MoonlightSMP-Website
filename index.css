@@ -115,11 +115,55 @@ body {
 }
 
 #header-text {
-    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Luxurious Roman', cursive;
     font-size: 64px;
     text-align: center;
     padding-top: 5%;
     color: rgba(0, 195, 255, 0.898);
+}
+
+#address-div {
+    display: inline-block;
+    background-color: transparent;
+    margin-top: 48px;
+    margin-left: 42.5%;
+    width: 275px;
+    height: 75px;
+    border-radius: 0px;
+    text-align: center;
+    transition: background-color 0.4s, border-radius 0.6s;
+}
+
+#address-div:hover {
+    background-color: rgba(0, 195, 255, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.4s, border-radius 0.6s;
+}
+
+#server-address {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #e4e1e1;
+}
+
+#address-bar {
+    margin: auto;
+    background-color: transparent;
+    width: 0px;
+    height: 4px;
+}
+
+#copy-address-alert {
+    display: none;
+    background-color: rgba(155, 155, 155, 0.1);
+    border-radius: 8px;
+    margin-top: 22.5%;
+    width: 250px;
+    height: 62.5px;
+    color: #d4d4d4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .fa-copy {
@@ -144,6 +188,11 @@ body {
 }
 
 .fa-scroll {
+    margin-right: 4px;
+}
+
+.fa-times {
+    margin-top: 4px;
     margin-right: 4px;
 }
 

@@ -1,83 +1,117 @@
 body {
     background-color: #272727;
-}
+} 
 
-nav {
-    background-color: #414141;
+#navbar {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
+#navbar-home-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #e4e1e1;
 }
 
-nav ul li {
+#navbar-faq-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #e4e1e1;
+}
+
+#navbar-rules-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #e4e1e1;
+}
+
+#navbar-home-text {
+    display: inline-flex;
+    justify-content: center;
+    color: #e4e1e1;
     text-decoration: none;
+    padding-top: 10px;
 }
 
-#CopyAddressDiv {
-    position: absolute;
-    margin-top: 25px;
-    background-color: #414141;
-    width: 400px;
-    border-radius: 16px;
-    margin-left: 40%;
+#navbar-faq-text {
+    display: inline-flex;
+    justify-content: center;
+    color: #e4e1e1;
+    text-decoration: none;
+    padding-top: 10px;
 }
 
-#AddressTextDiv {
-    position: absolute;
-    background-color: gray;
-    border-radius: 16px;
-    bottom: 5pt;
-    left: 5pt;
-    width: 85%;
-    height: 42px;
+#navbar-rules-text {
+    display: inline-flex;
+    justify-content: center;
+    color: #e4e1e1;
+    text-decoration: none;
+    padding-top: 10px;
 }
 
-#Address-Text {
-    position: absolute;
-    
-    bottom: -3pt;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    top: -10px;
-    left: 15%;
+#navbar-home-bar {
+    margin: auto;
+    width: 0px;
+    margin-top: 8px;
+    height: 4px;
 }
 
-#copyAddressButton {
-    position: relative;
-    margin-left:360px;
-    width: 56px;
-    height: 56px;
-    border-style: none;
-    background-color: #323232;
-    border-radius: 50%;
+#navbar-faq-bar {
+    margin: auto;
+    width: 0px;
+    margin-top: 8px;
+    height: 4px;
 }
 
-#address-popup-text {
-    font-family: Arial, Helvetica, sans-serif;
-    color: lightgray;
+#navbar-rules-bar {
+    margin: auto;
+    width: 0px;
+    margin-top: 8px;
+    height: 4px;
 }
 
-#addressCopyPopupButton {
-    border-style: hidden;
-    margin-bottom: 10px;
-    width: 32px;
-    height: 32px;
+#home-placeholder-div {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 0px;
+    transition: background-color 0.4s, border-radius 0.6s;
+    width: 128px;
+    height: 48px;
 }
 
-#address-popup {
-    position: absolute;
-    opacity: 0;
-    display: none;
-    background-color: #323232;
-    margin: 0 auto;
-    margin-left: 45%;
-    width: 175px;
-    text-align: center;
-    border-radius: 16px;
-    box-shadow: 3px 3px #232323;
-    z-index: 99;
+#home-placeholder-div:hover {
+    background-color: rgba(0, 195, 255, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.4s, border-radius 0.6s;
+}
+
+#faq-placeholder-div {   
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 0px;
+    transition: background-color 0.4s, border-radius 0.6s;
+    width: 128px;
+    height: 48px;
+}
+
+#faq-placeholder-div:hover {
+    background-color: rgba(0, 195, 255, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.4s, border-radius 0.6s;
+}
+
+#rules-placeholder-div {   
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 0px;
+    transition: background-color 0.4s, border-radius 0.6s;
+    width: 128px;
+    height: 48px;
+}
+
+#rules-placeholder-div:hover {
+    background-color: rgba(0, 195, 255, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.4s, border-radius 0.6s;
 }
 
 #header-text {
@@ -85,6 +119,7 @@ nav ul li {
     font-size: 64px;
     text-align: center;
     padding-top: 5%;
+    color: rgba(0, 195, 255, 0.898);
 }
 
 .fa-copy {
@@ -98,6 +133,20 @@ nav ul li {
     margin-top: 10px;
 }
 
+.fa-home {
+    color: #e4e1e1;
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.fa-question {
+    margin-right: 4px;
+}
+
+.fa-scroll {
+    margin-right: 4px;
+}
+
 .snowflake {
     position: fixed;
     width: 10px;
@@ -105,5 +154,4 @@ nav ul li {
     background: linear-gradient(white, white);
     border-radius: 50%;
     filter: drop-shadow(0 0 10px white);
-    z-index: 1000;
 }

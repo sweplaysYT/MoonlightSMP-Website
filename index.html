@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,37 +13,30 @@
     <script src="snowfall.js"></script>
     <title>Moonlight SMP | Home</title>
 </head>
-
 <body>
     <div id="snowflakeContainer">
         <span class="snowflake"></span>
-      </div>
-
-    <div id="address-popup">
-        <div class="address-popup-content">        
-            <i class="far fa-check-circle"></i>
-            <p id="address-popup-text">Server address <br/>successfully copied</p>
-            <button id="addressCopyPopupButton" onclick="ClosePopup()">Ok</button>
-        </div>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-    </nav>
-
-    <div id="CopyAddressDiv">
-        <button id="copyAddressButton" onclick="serverAddressCopy()"><i class="fas fa-copy"></i></button>
-        <div id="AddressTextDiv">
-            <p id="Address-Text">MoonLightsS1.aternos.me</p>
-        </div>
     </div>
 
     <div>
         <h1 id="header-text">Moonlight SMP</h1>
     </div>
-</body>
 
+    <div id="navbar">
+        <div id="home-placeholder-div" onpointerenter="homeLinkHover()" onpointerleave="homeLinkStopHover()">
+            <span id="navbar-home-link"><i class="fas fa-home"></i><a id="navbar-home-text" href="">Home</a></span>
+            <div id="navbar-home-bar"></div>
+        </div>
+
+        <div id="faq-placeholder-div" onpointerenter="faqLinkHover()" onpointerleave="faqLinkStopHover()">
+            <span id="navbar-faq-link"><i class="fas fa-question"></i><a id="navbar-faq-text" href="">FAQ</a></span>
+            <div id="navbar-faq-bar"></div>
+        </div>
+
+        <div id="rules-placeholder-div" onpointerenter="rulesLinkHover()" onpointerleave="rulesLinkStopHover()">
+            <span id="navbar-rules-link"><i class="fas fa-scroll"></i><a id="navbar-rules-text" href="">Rules</a></span>
+            <div id="navbar-rules-bar"></div>
+        </div>
+    </div>
+</body>
 </html>

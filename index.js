@@ -12,7 +12,7 @@ function serverAddressCopy() {
     document.body.removeChild(dummy);
 
     var popup = document.getElementById('copy-address-alert');
-    popup.style.display = "flex";
+    popup.style.display = "block";
     var instance = window.setInterval(function() {
         popup.style.opacity = opacity;
         opacity = opacity + increment;
@@ -36,6 +36,13 @@ function ClosePopup() {
             popup.style.display = "none";
         }
     },15);
+}
+
+function closePopupBarWidth() {
+    var bar = document.getElementById('address-alert-bar');
+    bar.style.marginTop = "22.5%"
+    bar.style.width = "0"
+    bar.style.transition = "width 0.3s"
 }
 
 document.querySelector("#addressCopyPopupButton").addEventListener("click", ClosePopup);
@@ -110,5 +117,26 @@ function addressLeave() {
         address.style.backgroundColor = "rgb(0, 195, 255)"
         address.style.width = "0px";
         address.style.transition = "width 0.3s";
+    }, 1)
+}
+
+// ? SERVER ADDRESS ALERT
+
+function addressAlertHover() {
+    const alert = document.getElementById('address-alert-bar');
+    setTimeout(function() {
+        alert.style.display = "block"
+        alert.style.backgroundColor = "rgb(0, 195, 255)"
+        alert.style.width = "250px";
+        alert.style.transition = "width 0.3s";
+    }, 1)
+}
+
+function addressAlertLeave() {
+    const alert = document.getElementById('address-alert-bar');
+    setTimeout(function() {
+        alert.style.display = "block";
+        alert.style.width = "0px";
+        alert.style.transition = "width 0.3s";
     }, 1)
 }

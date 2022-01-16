@@ -122,6 +122,14 @@ body {
     color: rgba(0, 195, 255, 0.898);
 }
 
+#server-quotes {
+    color: lightgray;
+    margin-top: 8%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
 #address-div {
     display: inline-block;
     background-color: transparent;
@@ -155,8 +163,9 @@ body {
 }
 
 #copy-address-alert {
+    position: absolute;
     display: none;
-    background-color: rgba(155, 155, 155, 0.1);
+    background-color: rgba(0, 195, 255, 0.05);
     border-radius: 8px;
     margin-top: 22.5%;
     width: 250px;
@@ -164,6 +173,20 @@ body {
     color: #d4d4d4;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+
+#copy-address-alert-text-div {
+    display: inline-block;
+    position: absolute;
+    width: 225px;
+}
+
+#address-alert-bar {
+    margin: auto;
+    background-color: transparent;
+    width: 0px;
+    height: 4px;
+    margin-top: 22.5%;
 }
 
 .fa-copy {
@@ -174,7 +197,7 @@ body {
 .fa-check-circle {
     color: rgb(60, 219, 60);
     font-size: 48px;
-    margin-top: 10px;
+    
 }
 
 .fa-home {
@@ -192,8 +215,9 @@ body {
 }
 
 .fa-times {
+    position: absolute;
     margin-top: 4px;
-    margin-right: 4px;
+    margin-left: 235px;
 }
 
 .snowflake {

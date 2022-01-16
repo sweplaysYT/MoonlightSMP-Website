@@ -44,9 +44,14 @@
         <div id="address-bar"></div>
     </div>
 
-    <div id="copy-address-alert">
-        <span id="copy-address-alert-text"><p>Copied MoonLightsS1.aternos.me to the clipboard!</p></span>
-        <i onclick="ClosePopup()" id="copy-address-alert-close" class="fas fa-times"></i>
+    <div id="copy-address-alert" onpointerenter="addressAlertHover()" onpointerleave="addressAlertLeave()">
+        <div onclick="closePopupBarWidth()"><i onclick="ClosePopup()" id="copy-address-alert-close" class="fas fa-times"></i></div>
+        <div id="copy-address-alert-text-div">
+            <span id="copy-address-alert-text"><p>Copied MoonLightsS1.aternos.me to the clipboard!</p></span>
+        </div>
+        <div id="address-alert-bar"></div>
     </div>
+
+    <h2 id="server-quotes"><em>"Best SMP Server on this planet!"</em></h2>
 </body>
 </html>

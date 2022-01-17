@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="faq.css">
-    <script src="faq.js"></script>
-    <script src="../../snowfall.js"></script>
-    <title>Moonlight SMP | FAQ</title>
+    <script src="index.js"></script>
+    <script src="/snowfall.js"></script>
+    <title>Moonlight SMP | Home</title>
 </head>
 <body>
     <div id="snowflakeContainer">
@@ -19,17 +19,17 @@
     </div>
 
     <div id="header-logo-div">
-        <img id="header-logo" src="../../img/logo.png">
+        <img id="header-logo" src="/img/logo.png">
     </div>
 
     <div id="navbar">
         <div id="home-placeholder-div" onpointerenter="homeLinkHover()" onpointerleave="homeLinkStopHover()">
-            <span id="navbar-home-link"><i class="fas fa-home"></i><a id="navbar-home-text" href="../index/index.html">Home</a></span>
+            <span id="navbar-home-link"><i class="fas fa-home"></i><a id="navbar-home-text" href="index.html">Home</a></span>
             <div id="navbar-home-bar"></div>
         </div>
 
         <div id="faq-placeholder-div" onpointerenter="faqLinkHover()" onpointerleave="faqLinkStopHover()">
-            <span id="navbar-faq-link"><i class="fas fa-question"></i><a id="navbar-faq-text" href="faq.html">FAQ</a></span>
+            <span id="navbar-faq-link"><i class="fas fa-question"></i><a id="navbar-faq-text" href="../faq/faq.html">FAQ</a></span>
             <div id="navbar-faq-bar"></div>
         </div>
 
@@ -39,21 +39,21 @@
         </div>
     </div>
 
-    <div id="faq-div">
-        <div id="faq-div-shadow">placeholder</div>
-        <p id="faq-q1">Q: Can I hack on SMP?</p>
-        <p id="faq-a1">A: No unfair advantages <br/> over other players allowed</p>
-
-        <hr id="separation-line">
-
-        <p id="faq-q2">Q: Can I grief, kill people <br/> or steal stuff in smp?</p>
-        <p id="faq-a2">A: Griefing is not allowed and <br/> you can only kill people if they asked <br/> for it and stealing is strictly prohibited</p>
-
-        <hr id="separation-line">
-        
-        <p id=faq-q3>Q: What punishments can smp owners give me?</p>
-        <p id=faq-a3>A: The owner of a smp can punish you based on how bad the crime is</p>
+    <div id="address-div-container">
+        <div id="address-div" onpointerover="addressHover()" onpointerleave="addressLeave()" onclick="serverAddressCopy()">
+            <span><p id="server-address">MoonlightsS1.aternos.me</p></span>
+            <div id="address-bar"></div>
+        </div>
     </div>
 
+    <div id="copy-address-alert" onpointerenter="addressAlertHover()" onpointerleave="addressAlertLeave()">
+        <div onclick="closePopupBarWidth()"><i onclick="ClosePopup()" id="copy-address-alert-close" class="fas fa-times"></i></div>
+        <div id="copy-address-alert-text-div">
+            <span id="copy-address-alert-text"><p>Copied MoonLightsS1.aternos.me to the clipboard!</p></span>
+        </div>
+        <div id="address-alert-bar"></div>
+    </div>
+
+    <h2 id="server-quotes"><em>"Best SMP Server on this planet!"</em></h2>
 </body>
 </html>

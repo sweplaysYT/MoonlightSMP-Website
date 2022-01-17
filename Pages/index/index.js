@@ -1,5 +1,4 @@
 var opacity = 0;
-let begonetimer = 5 * 1000;
 
 function serverAddressCopy() {
     var address = "MoonLightsS1.aternos.me"

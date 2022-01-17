@@ -12,7 +12,7 @@ function serverAddressCopy() {
     document.body.removeChild(dummy);
 
     var popup = document.getElementById('copy-address-alert');
-    popup.style.display = "block";
+    popup.style.display = "flex";
     var instance = window.setInterval(function() {
         popup.style.opacity = opacity;
         opacity = opacity + increment;

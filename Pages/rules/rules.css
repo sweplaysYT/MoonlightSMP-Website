@@ -2,6 +2,20 @@ body {
     background-color: #272727;
 } 
 
+p {
+    color: #e4e1e1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#header-text {
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 5%;
+    color: rgba(0, 195, 255, 0.898);
+}
+
 #navbar {
     text-align: center;
 }
@@ -114,119 +128,36 @@ body {
     transition: background-color 0.4s, border-radius 0.6s;
 }
 
-#header-text {
-    font-family: 'Luxurious Roman', cursive;
-    font-size: 64px;
-    text-align: center;
-    padding-top: 5%;
-    color: rgba(0, 195, 255, 0.898);
-}
-
-#server-quotes {
+#rules-div {
+    margin: auto;
     display: flex;
-    justify-content: center;
-    color: lightgray;
-    margin-top: 75px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-}
-
-#address-div {
-    margin: 0 auto;
-    display: flex;
-    flex-shrink: 0;
-    background-color: transparent;
     justify-content: center;
     align-self: center;
-    align-items: center;
-    margin-top: 50px;
-    width: 275px;
-    height: 75px;
-    transition: background-color 0.4s, border-radius 0.6s;
-}
-
-#address-div:hover {
-    background-color: rgba(0, 195, 255, 0.1);
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(49, 49, 49);
     border-radius: 8px;
-    transition: background-color 0.4s, border-radius 0.6s;
+    width: 400px;
 }
 
-#server-address {
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    color: #e4e1e1;
-    text-align: center;
-}
-
-#address-bar {
-    display: flex;
+#rules-div-shadow {
     position: absolute;
-    margin: 0 auto;
-    background-color: transparent;
-    margin-top: 70px;
-    height: 5px;
-}
-
-#copy-address-alert {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 195, 255, 0.05);
+    display: inline-block;
+    background-color: rgba(29, 29, 29, 0.25);
+    color: rgba(0, 0, 0, 0);
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 400px;
+    padding-bottom: 560px;
+    z-index: -1;
     border-radius: 8px;
-    justify-content: left;
-    align-content: flex-end;
-    width: 250px;
-    height: 62.5px;
-    color: #d4d4d4;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    bottom: 0;
-    bottom: 12.5px;
 }
 
-#copy-address-alert-text-div {
-    position: absolute;
+#underline {
+    border-radius: 100px;
+    background-color: #e4e1e1;
     width: 225px;
-}
-
-#address-alert-bar {
-    position: absolute;
-    margin: auto;
-    background-color: transparent;
-    width: 0px;
-    height: 4px;
-    margin-top: 55px;
-}
-
-.fa-copy {
-    color: rgb(240, 240, 240);
-    font-size: 40px;
-}
-
-.fa-check-circle {
-    color: rgb(60, 219, 60);
-    font-size: 48px;
-    
-}
-
-.fa-home {
-    color: #e4e1e1;
-    font-size: 24px;
-    margin-right: 4px;
-}
-
-.fa-question {
-    margin-right: 4px;
-}
-
-.fa-scroll {
-    margin-right: 4px;
-}
-
-.fa-times {
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 235px;
+    height: 1pt;
 }
 
 .snowflake {

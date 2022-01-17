@@ -34,14 +34,16 @@
         </div>
 
         <div id="rules-placeholder-div" onpointerenter="rulesLinkHover()" onpointerleave="rulesLinkStopHover()">
-            <span id="navbar-rules-link"><i class="fas fa-scroll"></i><a id="navbar-rules-text" href="">Rules</a></span>
+            <span id="navbar-rules-link"><i class="fas fa-scroll"></i><a id="navbar-rules-text" href="Pages/rules/rules.html">Rules</a></span>
             <div id="navbar-rules-bar"></div>
         </div>
     </div>
 
-    <div id="address-div" onpointerover="addressHover()" onpointerleave="addressLeave()" onclick="serverAddressCopy()">
-        <span><p id="server-address">MoonlightsS1.aternos.me</p></span>
-        <div id="address-bar"></div>
+    <div id="address-div-container">
+        <div id="address-div" onpointerover="addressHover()" onpointerleave="addressLeave()" onclick="serverAddressCopy()">
+            <span><p id="server-address">MoonlightsS1.aternos.me</p></span>
+            <div id="address-bar"></div>
+        </div>
     </div>
 
     <div id="copy-address-alert" onpointerenter="addressAlertHover()" onpointerleave="addressAlertLeave()">

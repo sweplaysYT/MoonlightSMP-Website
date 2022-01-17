@@ -8,8 +8,18 @@ p {
     text-align: center;
 }
 
+#header-logo-div {
+    display: flex;
+    justify-content: center;
+}
+
+#header-logo {
+    width: 288px;
+}
+
 #navbar {
     text-align: center;
+    margin-top: 2%;
 }
 
 #navbar-home-link {

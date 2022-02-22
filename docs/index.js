@@ -1,7 +1,7 @@
 var opacity = 0;
 
 function serverAddressCopy() {
-    var address = "34.89.219.236:46633"
+    var address = "de1.realityno.de:25689"
     var dummy = document.createElement("textarea");
     var increment = 0.05
     document.body.appendChild(dummy);
